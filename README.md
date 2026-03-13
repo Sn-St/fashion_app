@@ -199,3 +199,9 @@ streamlit run fashion_app.py
 # Author
 
 This project was developed as part of an AI / Data Science portfolio.
+
+---
+
+# License
+
+MIT License
