@@ -1,4 +1,4 @@
-# Fashion Analysis AI App
+# Color & Shape Fider
 
 AI-powered fashion analysis application combining computer vision and machine learning.
 
