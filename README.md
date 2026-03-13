@@ -8,6 +8,55 @@ This application analyzes clothing images and provides insights about how well t
 
 # Overview
 
+## Main Result Screen
+
+![result](result.png)
+
+After uploading a clothing image, the application automatically performs the analysis and displays the predicted results.
+
+The system estimates:
+
+* Personal color compatibility
+* Body silhouette type
+
+The interface presents the results in an easy-to-understand format for users.
+
+---
+
+## Color Analysis Visualization
+
+![color](color_analysis.png)
+
+The color analysis module extracts several visual features from the clothing image.
+
+These include:
+
+* L*a*b color space features
+* HSV color features
+* Brightness and saturation information
+
+The extracted features are visualized and used by a machine learning model to estimate compatibility with seasonal personal color types.
+
+---
+
+## Shape / Silhouette Analysis
+
+![shape](shape_analysis.png)
+
+The silhouette analysis module evaluates the structural characteristics of the clothing.
+
+The system performs:
+
+* contour extraction
+* silhouette classification using YOLOv8
+* body type scoring based on rule-based logic
+
+The results are visualized as scores showing the relationship between the clothing silhouette and possible body type compatibility.
+
+---
+
+# Demo
+
 This project is a fashion analysis system built with Python and Streamlit.
 
 The application analyzes clothing images and evaluates them from two perspectives:
@@ -144,15 +193,6 @@ pip install -r requirements.txt
 Run the Streamlit application
 
 streamlit run fashion_app.py
-
----
-
-# Future Improvements
-
-* Improve silhouette classification accuracy
-* Expand the training dataset
-* Deploy the application as a web service
-* Improve explainability features
 
 ---
 
